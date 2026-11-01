@@ -1,0 +1,36 @@
+{
+  "case_body": {
+    "triangles": 1016,
+    "closed_edges": true,
+    "volume_mm3": 13181.06,
+    "bounds_mm": [
+      [
+        -37.0,
+        -20.0,
+        0.0
+      ],
+      [
+        37.0,
+        20.0,
+        26.0
+      ]
+    ]
+  },
+  "case_lid": {
+    "triangles": 172,
+    "closed_edges": true,
+    "volume_mm3": 6838.0,
+    "bounds_mm": [
+      [
+        -37.0,
+        -20.0,
+        0.0
+      ],
+      [
+        37.0,
+        20.0,
+        5.0
+      ]
+    ]
+  }
+}
