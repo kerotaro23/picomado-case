@@ -2,7 +2,14 @@
 
 Raspberry Pi Pico W + Waveshare Pico-ePaper-2.13 (SKU 19406 / V4) 用の3Dプリントケース。操作ボタンなし。
 
-## 最新版：Little Retro TV v0.2
+## Soft Frame v0.1
+
+丸い角のフォトフレーム風ケースと卓上台座です。
+
+- [説明・印刷データ](soft_frame/README_ja.md)
+- [一式ダウンロード（ZIP）](downloads/PicoMado_SoftFrame_v01.zip)
+
+## Little Retro TV v0.2
 
 台座と飾りダイヤルを備えたレトロテレビ型です。台座込み約90 × 63 × 52 mm（幅 × 高さ × 奥行）。
 

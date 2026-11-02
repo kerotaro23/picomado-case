@@ -1,0 +1,17 @@
+{
+  "frame_body.stl": {
+    "closed_edges": true,
+    "volume_mm3": 35732.86131207999,
+    "triangles": 360
+  },
+  "frame_stand.stl": {
+    "closed_edges": true,
+    "volume_mm3": 19859.719778479994,
+    "triangles": 284
+  },
+  "frame_lid.stl": {
+    "closed_edges": true,
+    "volume_mm3": 8727.830870160005,
+    "triangles": 300
+  }
+}
