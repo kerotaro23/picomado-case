@@ -11,7 +11,7 @@ Raspberry Pi Pico W + Waveshare Pico-ePaper-2.13 (SKU 19406 / V4) 用の3Dプリ
 | デザイン | 特徴 | 完成寸法 | 説明 |
 | --- | --- | --- | --- |
 | **Soft Frame v0.1（新規追加）** | 角丸のフォトフレーム風。独立した卓上台座付き | ケース82 × 48 × 28／台座込み82 × 52 × 46 | [組み立て説明](soft_frame/README_ja.md) |
-| Little Retro TV v0.2 | 飾りダイヤルと台座を備えたレトロテレビ型 | 台座込み約90 × 63 × 52 | [組み立て説明](retro_tv/README_ja.md) |
+| Little Retro TV v0.3 | 飾りダイヤルと台座を備えたレトロテレビ型 | 台座込み約110 × 64 × 70 | [組み立て説明](retro_tv/README_ja.md) |
 | Basic v0.1 | シンプルな箱型。スタンドなし | 74 × 40 × 28 | [組み立て説明](basic/README_ja.md) |
 
 ## Soft Frame v0.1
@@ -26,13 +26,15 @@ Raspberry Pi Pico W + Waveshare Pico-ePaper-2.13 (SKU 19406 / V4) 用の3Dプリ
 
 [印刷・組み立て説明](soft_frame/README_ja.md) · [STL・編集データ](soft_frame/) · [一式ダウンロード（ZIP）](downloads/PicoMado_SoftFrame_v01.zip)
 
-## Little Retro TV v0.2
+## Little Retro TV v0.3
 
-台座と飾りダイヤルを備えたレトロテレビ型です。ダイヤルとスピーカー風の溝は装飾です。
+台座と飾りダイヤルを備えたレトロテレビ型です。v0.3では基板周囲の余裕を片側1.0 mmへ、Pico W側の収納空間を72×38 mmへ広げ、ケースの奥行を4 mm増やしました。台座は110×70 mm、本体受け幅は72 mmに拡大しています。ダイヤルとスピーカー風の溝は装飾です。
+
+本体・ふた・台座はv0.3のセットを使用してください。旧版は[前回のZIP](downloads/PicoMado_RetroTV_v02.zip)に残しています。
 
 ![レトロテレビ型ケース](retro_tv/preview.png)
 
-[印刷・組み立て説明](retro_tv/README_ja.md) · [STL・編集データ](retro_tv/) · [一式ダウンロード（ZIP）](downloads/PicoMado_RetroTV_v02.zip)
+[印刷・組み立て説明](retro_tv/README_ja.md) · [STL・編集データ](retro_tv/) · [一式ダウンロード（ZIP）](downloads/PicoMado_RetroTV_v03.zip)
 
 ## Basic v0.1
 

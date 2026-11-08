@@ -1,8 +1,8 @@
 {
   "tv_body": {
-    "triangles": 2088,
+    "triangles": 1992,
     "closed_edges": true,
-    "volume_mm3": 28301.06,
+    "volume_mm3": 26825.18,
     "bounds_mm": [
       [
         -39.0,
@@ -12,14 +12,14 @@
       [
         49.0,
         22.0,
-        26.0
+        30.0
       ]
     ]
   },
   "tv_lid": {
     "triangles": 172,
     "closed_edges": true,
-    "volume_mm3": 8662.0,
+    "volume_mm3": 8698.0,
     "bounds_mm": [
       [
         -39.0,
@@ -36,17 +36,17 @@
   "tv_stand": {
     "triangles": 380,
     "closed_edges": true,
-    "volume_mm3": 30504.4,
+    "volume_mm3": 57248.8,
     "bounds_mm": [
       [
-        -45.0,
-        -26.0,
+        -55.0,
+        -35.0,
         0.0
       ],
       [
-        45.0,
-        26.0,
-        23.0
+        55.0,
+        35.0,
+        24.0
       ]
     ]
   },
@@ -66,5 +66,16 @@
         3.2
       ]
     ]
+  },
+  "assembly_checks": {
+    "lid_clearance_per_side_mm": 0.25,
+    "stand_clearance_per_side_mm": 0.4,
+    "assembled_dimensions_mm": [
+      110,
+      64,
+      70
+    ],
+    "base_area_ratio": 1.6453,
+    "physical_fit_tested": false
   }
 }
