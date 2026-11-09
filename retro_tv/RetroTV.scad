@@ -1,60 +1,53 @@
-// PicoMado Little Retro TV, fit-test v0.3. All dimensions in mm.
-part="assembly"; // body, lid, stand, knob, assembly, layout
-$fn=64;
-pcb_w=65; pcb_h=30.5; pcb_clearance=1.0;
-window_w=60.4; window_h=30.4; window_x=0; window_y=0;
-lid_clearance=.25;
-stand_clearance=.4; // each side along depth
-module box(x,y,z,w,h,d){translate([x,y,z])cube([w,h,d]);}
-module body(){
- difference(){
-  box(-39,-22,0,88,44,30);
-  box(window_x-window_w/2,window_y-window_h/2,-1,window_w,window_h,4);
-  box(-pcb_w/2-pcb_clearance,-pcb_h/2-pcb_clearance,2,pcb_w+2*pcb_clearance,pcb_h+2*pcb_clearance,4);
-  box(-36,-19,5,72,38,27);
-  box(38,-19,5,9,38,27);
-  box(-40,-7,6,8,14,22);
-  box(32,-7,6,18,14,22);
-  for(y=[-14,-11,-8])box(38,y,-1,8,1,2);
- }
+// Compact Retro TV v0.4. mm. Estimated fit; see README.
+part="assembly"; // body, lid, retainer, stand, knob, assembly
+$fn=48;
+// Board 65x30.5, thickness assumed 1.6. Window center x=+2.5.
+// Left FPC relief reaches x=-36.5 (4 mm beyond board), y=+-9.5.
+module body(){difference(){union(){
+translate([-38.5, -21, 0]) cube([82.0, 42, 22]);
 }
-module lid(){
- difference(){
-  union(){
-   box(-39,-22,0,88,44,2);
-   box(-36+lid_clearance,-19+lid_clearance,2,72-2*lid_clearance,38-2*lid_clearance,3);
-  }
-  box(-34.5+lid_clearance,-17.5+lid_clearance,2,69-2*lid_clearance,35-2*lid_clearance,4);
- }
+translate([-23, -13, -1]) cube([51, 26, 3]);
+translate([-30.2, -15.2, 1.4]) cube([60.4, 30.4, 2.6]);
+translate([-32.85, -15.6, 3]) cube([65.7, 31.2, 4]);
+translate([-36.5, -19, 6]) cube([73.0, 38, 18]);
+translate([-36.5, -9.5, 1.4]) cube([6.7, 19.0, 22.0]);
+translate([-40, -7, 8]) cube([10, 14, 12]);
+translate([32, -7, 8]) cube([13, 14, 12]);
+translate([37.2, -14, -1]) cube([4.5, 1, 1.8]);
+translate([37.2, -11, -1]) cube([4.5, 1, 1.8]);
+translate([37.2, -8, -1]) cube([4.5, 1, 1.8]);
+translate([-35.1, -17.8, -1]) cube([2.2, 2.2, 25]);
+translate([-35.1, 15.6, -1]) cube([2.2, 2.2, 25]);
+translate([32.9, -17.8, -1]) cube([2.2, 2.2, 25]);
+translate([32.9, 15.6, -1]) cube([2.2, 2.2, 25]);
+}}
+module lid(){difference(){union(){
+translate([-38.5, -21, 0]) cube([82.0, 42, 2]);
+translate([-36.2, -18.7, 2]) cube([72.4, 37.4, 2]);
 }
-module stand(){
- difference(){
-  union(){
-   box(-55,-35,0,110,70,5);
-   box(-15,-12,5,30,24,12);
-   box(-36,-19.4,17,72,38.8,7);
-  }
-  box(-37,-16-stand_clearance,20,74,32+2*stand_clearance,5);
- }
+translate([-34.7, -17.2, 2]) cube([69.4, 34.4, 3]);
+}}
+module retainer_assembled(){difference(){union(){
+translate([-35.8, -18.6, 6]) cube([71.6, 37.2, 2]);
+translate([-32.4, -13, 4.9]) cube([2.0, 2.5, 1.1]);
+translate([-32.4, 10.5, 4.9]) cube([2.0, 2.5, 1.1]);
+translate([30.4, -13, 4.9]) cube([2.0, 2.5, 1.1]);
+translate([30.4, 10.5, 4.9]) cube([2.0, 2.5, 1.1]);
 }
-module knob(){
- rotate_extrude() polygon([[0,0],[4,0],[4.6,.6],[4.6,2.6],[4,3.2],[0,3.2]]);
+translate([-30.4, -13.5, 4]) cube([60.8, 27.0, 5]);
+translate([-37, -9.5, 4]) cube([8, 19.0, 5]);
+translate([-35.1, -17.8, 4]) cube([2.2, 2.2, 5]);
+translate([-35.1, 15.6, 4]) cube([2.2, 2.2, 5]);
+translate([32.9, -17.8, 4]) cube([2.2, 2.2, 5]);
+translate([32.9, 15.6, 4]) cube([2.2, 2.2, 5]);
+}}
+module stand(){difference(){union(){
+translate([-43, -22, 0]) cube([86, 44, 3]);
+translate([-28, -14.8, 3]) cube([56, 29.6, 8]);
 }
-module assembly(){
- color([.87,.62,.39])body();
- color([.27,.36,.36]){
-  translate([0,0,32])mirror([0,0,1])lid();
-  for(y=[0,11])translate([42,y,0])mirror([0,0,1])knob();
-  // Map print Z upward along case Y; centered beneath housing.
-  multmatrix([[1,0,0,5],[0,0,1,-42],[0,1,0,16],[0,0,0,1]])stand();
- }
-}
-if(part=="body")body();
-if(part=="lid")lid();
-if(part=="stand")stand();
-if(part=="knob")knob();
-if(part=="assembly")assembly();
-if(part=="layout"){
- body();translate([0,54,0])lid();translate([115,0,0])stand();
- translate([70,48,0])knob();translate([84,48,0])knob();
-}
+translate([-29, -12.3, 7]) cube([58, 24.6, 6]);
+}}
+module retainer(){translate([0,0,8])mirror([0,0,1])retainer_assembled();}
+module knob(){rotate_extrude()polygon([[0,0],[2.7,0],[3.2,.5],[3.2,2.5],[2.7,3],[0,3]]);}
+if(part=="body")body(); if(part=="lid")lid(); if(part=="retainer")retainer(); if(part=="stand")stand(); if(part=="knob")knob();
+if(part=="assembly"){color("BurlyWood")body(); color("Teal"){translate([0,0,24])mirror([0,0,1])lid();for(y=[1,10])translate([38.5,y,0])mirror([0,0,1])knob();multmatrix([[1,0,0,2.5],[0,0,1,-28],[0,1,0,12],[0,0,0,1]])stand();}color("Orange")retainer_assembled();}
