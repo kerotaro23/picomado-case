@@ -1,8 +1,8 @@
 {
   "tv_body": {
-    "triangles": 4088,
+    "triangles": 7420,
     "closed_edges": true,
-    "volume_mm3": 18401.69,
+    "volume_mm3": 18406.04,
     "bounds_mm": [
       [
         -38.5,
@@ -17,9 +17,9 @@
     ]
   },
   "tv_lid": {
-    "triangles": 172,
+    "triangles": 1724,
     "closed_edges": true,
-    "volume_mm3": 7528.8,
+    "volume_mm3": 7964.4,
     "bounds_mm": [
       [
         -38.5,
@@ -29,24 +29,7 @@
       [
         43.5,
         21.0,
-        4.0
-      ]
-    ]
-  },
-  "tv_retainer": {
-    "triangles": 636,
-    "closed_edges": true,
-    "volume_mm3": 1821.92,
-    "bounds_mm": [
-      [
-        -35.8,
-        -18.6,
-        0.0
-      ],
-      [
-        35.8,
-        18.6,
-        3.0999999999999996
+        19.3
       ]
     ]
   },
@@ -67,36 +50,30 @@
       ]
     ]
   },
-  "tv_knob_print_twice": {
-    "triangles": 384,
-    "closed_edges": true,
-    "volume_mm3": 91.48,
-    "bounds_mm": [
-      [
-        -3.2,
-        -3.2,
-        0.0
-      ],
-      [
-        3.2,
-        3.2,
-        3.0
-      ]
-    ]
-  },
   "assembly_checks": {
+    "part_count": 3,
+    "additional_hardware": false,
     "reference_envelopes_no_collision": true,
-    "retainer_body_no_collision": true,
-    "lid_body_no_collision": true,
-    "window_covers_estimated_active_area_with_board_float": true,
-    "fpc_left_clearance_from_board_mm": 4,
-    "assumed_pcb_thickness_mm": 1.6,
-    "pad_to_pcb_gap_mm": 0.3,
+    "assembled_parts_no_collision": true,
+    "window_covers_assumed_active_area": true,
+    "pcb_axial_play_mm": 0.1,
+    "pcb_lateral_clearance_per_side_mm": 0.35,
+    "fpc_relief_beyond_pcb_mm": 4,
+    "latch_nominal_deflection_mm": 0.5,
+    "latch_beam_length_mm": 10,
+    "latch_beam_thickness_mm": 0.8,
+    "snap_force_and_fatigue_tested": false,
     "physical_fit_tested": false,
-    "dimensions_with_stand_mm": [
+    "case_mm": [
+      82,
+      42,
+      24
+    ],
+    "with_stand_mm": [
       86,
       49,
       44
-    ]
+    ],
+    "max_axial_play_including_lid_mm": 0.4
   }
 }

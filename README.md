@@ -11,7 +11,7 @@ Raspberry Pi Pico W + Waveshare Pico-ePaper-2.13 (SKU 19406 / V4) 用の3Dプリ
 | デザイン | 特徴 | 完成寸法 | 説明 |
 | --- | --- | --- | --- |
 | **Soft Frame v0.1（新規追加）** | 角丸のフォトフレーム風。独立した卓上台座付き | ケース82 × 48 × 28／台座込み82 × 52 × 46 | [組み立て説明](soft_frame/README_ja.md) |
-| Compact Retro TV v0.4 | 飾りダイヤルと台座を備えたレトロテレビ型 | 台座込み約86 × 49 × 44 | [組み立て説明](retro_tv/README_ja.md) |
+| Print-only Retro TV v0.5 | 3部品・スナップ式ふたのレトロテレビ型 | 台座込み約86 × 49 × 44 | [組み立て説明](retro_tv/README_ja.md) |
 | Basic v0.1 | シンプルな箱型。スタンドなし | 74 × 40 × 28 | [組み立て説明](basic/README_ja.md) |
 
 ## Soft Frame v0.1
@@ -26,17 +26,17 @@ Raspberry Pi Pico W + Waveshare Pico-ePaper-2.13 (SKU 19406 / V4) 用の3Dプリ
 
 [印刷・組み立て説明](soft_frame/README_ja.md) · [STL・編集データ](soft_frame/) · [一式ダウンロード（ZIP）](downloads/PicoMado_SoftFrame_v01.zip)
 
-## Compact Retro TV v0.4
+## Print-only Retro TV v0.5
 
-左側FPCに局所的な逃げを設け、基板押さえ枠を追加した小型版です。本体82×42×24 mm、台座込み86×49×44 mm。画面窓は写真から推定した表示位置に合わせています。型番の公表寸法と写真からの推定に基づく試作で、実機適合は未検証です。
+**本体・背面ふた・台座の3部品だけを印刷して組み立てる構成です。** ねじ、ナット、接着剤、テープ、クッションを使わず、ふた一体の4本の基板支柱と上下2つのスナップ爪で保持します。飾りダイヤルは前面一体の彫り込みです。
 
-基板押さえにはM2×10 mm小ねじ4本・M2ナット4個・約0.5 mm厚の柔らかい絶縁クッションが必要です。本体・ふた・枠・台座・ダイヤルはv0.4のセットで使用してください。
+本体82×42×24 mm、台座込み86×49×44 mm。左側FPCの局所的な逃げと、推定表示位置に合わせた窓を備えています。型番資料・写真からの推定設計で、実機適合とスナップ動作は未検証です。ふたはPETGでの試作を想定し、まず電子部品なしで着脱を確認してください。
 
-![コンパクトなレトロテレビ型ケース](retro_tv/preview.png)
+![プリントだけで組めるレトロテレビ型](retro_tv/preview.png)
 
-[印刷・組み立て説明](retro_tv/README_ja.md) · [STL・編集データ](retro_tv/) · [一式ダウンロード（ZIP）](downloads/PicoMado_RetroTV_v04.zip)
+[印刷・組み立て説明](retro_tv/README_ja.md) · [3部品のSTL・編集データ](retro_tv/) · [一式ダウンロード（ZIP）](downloads/PicoMado_RetroTV_v05.zip)
 
-旧版：[v0.3](downloads/PicoMado_RetroTV_v03.zip) · [v0.2](downloads/PicoMado_RetroTV_v02.zip)
+旧版：[v0.4（ねじ固定）](downloads/PicoMado_RetroTV_v04.zip) · [v0.3](downloads/PicoMado_RetroTV_v03.zip) · [v0.2](downloads/PicoMado_RetroTV_v02.zip)
 
 ## Basic v0.1
 
@@ -54,7 +54,7 @@ Raspberry Pi Pico W + Waveshare Pico-ePaper-2.13 (SKU 19406 / V4) 用の3Dプリ
 4. ケーブル開口のブリッジと必要なサポートを確認し、まず本体だけを印刷します。
 5. 非通電でパネル位置・基板周辺・積層高さ・USBプラグの収まりを確認してから、残りの部品を印刷します。
 
-Retro TV v0.4はクッション付きのねじ固定枠で基板端を保持します。他のケースは露出基板端を絶縁固定材で留める想定です。ふたで基板を無理に押さえないでください。
+Retro TV v0.5はふた一体の支柱で基板端の移動を制限します。他のケースは各説明書の固定方法に従ってください。ガラスやFPCに力をかけず、ふたを無理に閉めないでください。
 
 ## データと検証状況
 
